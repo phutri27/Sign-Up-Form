@@ -1,0 +1,149 @@
+@font-face {
+  font-family: myfont;
+  src: url(Norse-Bold.otf);
+}
+.body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.image {
+  position: relative;
+  flex: 1;
+}
+.image .main {
+  width: 100%;
+  height: 100%;
+}
+.image-div {
+  position: absolute;
+  height: 15%;
+  width: 100%;
+  background-color: black;
+  top: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.image-div .inside {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-div .inside img {
+  height: 90px;
+  width: 70px;
+}
+.image-div .inside p {
+  font-family: myfont, Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 5rem;
+}
+
+.right {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+}
+.right .upper {
+  background-color: rgb(246, 245, 245);
+  flex: 1.5;
+  justify-content: flex-end;
+  position: relative;
+}
+.right .upper .text {
+  position: absolute;
+  top: 30%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  width: 75%;
+  left: 5%;
+  font-weight: bold;
+}
+.right .upper .text .first span,
+.right .upper .text .second span {
+  font-style: italic;
+}
+.right .center {
+  background-color: white;
+  flex: 1.2;
+}
+.right .center-down {
+  margin-left: 5%;
+}
+.right .center-down p {
+  font-size: 1.4rem;
+  margin-top: 8px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 6px;
+}
+.right .center-down .form {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgb(75, 75, 75);
+  margin-top: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+}
+.right .center-down .form label[for] {
+  display: block;
+}
+.right .center-down .form-1 {
+  flex: 1;
+}
+.right .center-down .form-2 {
+  flex: 1;
+  margin-left: -300px;
+}
+.right .center-down .form input {
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  padding: 7px 70px 7px 0px;
+  border-radius: 6px;
+  background-color: rgb(243, 243, 243);
+  text-indent: 10px;
+}
+.right .center-down .form input:focus {
+  border: 2px solid rgb(51, 153, 208);
+  background-color: white;
+  outline: none;
+  box-shadow: 5px 5px 5px rgb(185, 180, 180);
+}
+.right .center-down .form #password:invalid {
+  border: 2px solid rgb(248, 77, 77);
+}
+.right .center-down .form #password:invalid:focus {
+  border: 2px solid rgb(51, 153, 208);
+  outline: none;
+}
+.right .lower {
+  flex: 1.3;
+  background-color: rgb(246, 245, 245);
+  box-shadow: 0px 15px 10px inset rgb(231, 229, 229);
+}
+.right .lower div {
+  margin-left: 5%;
+  margin-top: 2%;
+}
+.right .lower div button {
+  cursor: pointer;
+  padding: 13px 50px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 7px;
+  border: none;
+  background-color: #596D48;
+  color: white;
+  box-shadow: 5px 5px 5px rgb(206, 205, 205);
+}
+.right .lower div p span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  color: #596D48;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+
+/*# sourceMappingURL=style.css.map */
